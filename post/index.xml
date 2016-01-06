@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 小眼睛的自言自语</title>
+    <link>http://blog.xyj.name/post/</link>
+    <description>Recent content in Posts on 小眼睛的自言自语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2016 17:47:24 +0800</lastBuildDate>
+    <atom:link href="http://blog.xyj.name/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>two</title>
+      <link>http://blog.xyj.name/post/two/</link>
+      <pubDate>Tue, 05 Jan 2016 17:47:24 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/post/two/</guid>
+      <description>
+
+&lt;h1 id=&#34;heheh:e6a0bff01fd722bafeff865963008e1e&#34;&gt;heheh&lt;/h1&gt;
+
+&lt;p&gt;. sdf&lt;/p&gt;
+
+&lt;h2 id=&#34;sdfas:e6a0bff01fd722bafeff865963008e1e&#34;&gt;sdfas&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>http://blog.xyj.name/post/first/</link>
+      <pubDate>Tue, 05 Jan 2016 17:47:11 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/post/first/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
