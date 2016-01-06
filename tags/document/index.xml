@@ -5,8 +5,12 @@
     <link>http://blog.xyj.name/tags/document/</link>
     <description>Recent content in Document on 小眼睛的自言自语</description>
     <generator>Hugo -- gohugo.io</generator>
+<<<<<<< HEAD
     <language>zh-cn</language>
     <copyright>Copyright©2016 xyj.name 版权所有</copyright>
+=======
+    <language>en-us</language>
+>>>>>>> 09ca0c5b365d20545a1b0b927658ca2b53191802
     <lastBuildDate>Tue, 05 Jan 2016 17:47:24 +0800</lastBuildDate>
     <atom:link href="http://blog.xyj.name/tags/document/index.xml" rel="self" type="application/rss+xml" />
     
