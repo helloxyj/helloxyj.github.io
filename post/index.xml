@@ -7,8 +7,173 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright©2016 xyj.name 版权所有</copyright>
-    <lastBuildDate>Thu, 26 May 2016 11:52:24 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
     <atom:link href="http://blog.xyj.name/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Octave简单应用(一)</title>
+      <link>http://blog.xyj.name/post/octave/</link>
+      <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/post/octave/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4eedagp71j203r03rjrb.jpg&#34; alt=&#34;Octave&#34; title=&#34;Octave&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://wiki.octave.org/GNU_Octave_Wiki&#34;&gt;Octave&lt;/a&gt; 是一个旨在提供与Matlab语法兼容的开放源代码科学计算及数值分析的工具；它提供了方便的互动命令列接口来解决线性与非线性的数值运算问题，并可将计算结果可视化，与高价的商业软体MATLAB语法几乎兼容&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;环境搭建:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;环境搭建&lt;/h2&gt;
+
+&lt;h3 id=&#34;安装octave:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;安装octave&lt;/h3&gt;
+
+&lt;p&gt;Mac OSX平台下，用神器Homebrew安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew tap homebrew/science
+brew update &amp;amp;&amp;amp; brew upgrade 
+brew install octave 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装完成看到如下提示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;setenv(&#39;GNUTERM&#39;,&#39;qt&#39;)    # Requires QT; install gnuplot --with-qt
+setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)   # Requires XQuartz; install gnuplot --with-x11
+setenv(&#39;GNUTERM&#39;,&#39;wxt&#39;)   # Requires wxmac; install gnuplot --with-wxmac
+setenv(&#39;GNUTERM&#39;,&#39;aqua&#39;)  # Requires AquaTerm; install gnuplot --with-aquaterm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里提示我们要设置默认的graphics toolkit。首先选择GUI的展示基于那种框架，我选择x11。安装gnuplot：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;brew install gnuplot --with-x11&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;配置:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;配置&lt;/h3&gt;
+
+&lt;p&gt;在 .bash_profile种添加环境变量&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;配置默认的graphics toolkit ，在配置文件
+&lt;code&gt;/usr/local/share/octave/site/m/startup/octaverc&lt;/code&gt; 中添加 &lt;code&gt;setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;启动:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;启动&lt;/h3&gt;
+
+&lt;p&gt;直接命令行执行octave ，或者保存成脚本，打开脚本编辑器新加脚本&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &amp;quot;Terminal&amp;quot;
+ do script &amp;quot;`which octave`; exit&amp;quot;
+end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存成octave.app，在Launchapad中可以看到octave.app的图标，点击即可打开ocatave&lt;/p&gt;
+
+&lt;p&gt;在命令窗口种安装需要的package，比如image：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pkg install -forge image&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;简单操作:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;简单操作&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;矩阵操作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww1.sinaimg.cn/mw690/6f4077f3jw1f4ecnkt3spj20aw0dpgm1.jpg&#34; alt=&#34;矩阵操作&#34; title=&#34;矩阵操作&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;函数图像&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww3.sinaimg.cn/mw690/6f4077f3jw1f4ecunwoebj20gk0glt9u.jpg&#34; alt=&#34;函数图像&#34; title=&#34;函数图像&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;几种滤波器实现:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;几种滤波器实现&lt;/h2&gt;
+
+&lt;h3 id=&#34;均值滤波器:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;均值滤波器&lt;/h3&gt;
+
+&lt;p&gt;原理：&lt;/p&gt;
+
+&lt;p&gt;均值滤波也称为线性滤波，其采用的主要方法为邻域平均法。线性滤波的基本原理是用均值代替原图像中的各个像素值，即对待处理的当前像素点（x，y），选择一个模板，该模板由其近邻的若干像素组成，求模板中所有像素的均值，再把该均值赋予当前像素点（x，y），作为处理后图像在该点上的灰度g（x，y），即g（x，y）=1/m ∑f（x，y） m为该模板中包含当前像素在内的像素总个数。&lt;/p&gt;
+
+&lt;p&gt;实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function [retval] = avg_filter (matrix,n)
+##转成double计算
+rst = double(matrix);
+[row, column] = size(matrix);
+model(1:n,1:n) = 1
+for i=1:row-n+1
+  for j=1:column-n+1
+    c = rst(i:i+(n-1),j:j+(n-1)).*model;
+    s = sum(sum(c));
+    #模板内像素平均值
+    rst(i+(n-1)/2,j+(n-1)/2) = s/(n*n);
+  end
+end
+retval = uint8(rst);
+endfunction
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;缺点：&lt;/p&gt;
+
+&lt;p&gt;它不能很好地保护图像细节，在图像去噪的同时也破坏了图像的细节部分，从而使图像变得模糊，不能很好地去除噪声点&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;p&gt;原始图片&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4ed599leaj20c1090js0.jpg&#34; alt=&#34;原始图片&#34; title=&#34;原始图片&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;结果图片&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww3.sinaimg.cn/mw690/6f4077f3jw1f4ed59ml2dj20by08wmxo.jpg&#34; alt=&#34;结果图片&#34; title=&#34;结果图片&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;中值滤波器:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;中值滤波器&lt;/h3&gt;
+
+&lt;p&gt;原理：&lt;/p&gt;
+
+&lt;p&gt;中值滤波是基于排序统计理论的一种能有效抑制噪声的非线性信号处理技术，中值滤波的基本原理是把数字图像或数字序列中一点的值用该点的一个邻域中各点值的中值代替，让周围的像素值接近的真实值，从而消除孤立的噪声点。方法是用某种结构的二维滑动模板，将板内像素按照像素值的大小进行排序，生成单调上升（或下降）的为二维数据序列。二维中值滤波输出为g（x,y）=med{f(x-k,y-l),(k,l∈W)} ，其中，f(x,y)，g(x,y)分别为原始图像和处理后图像。W为二维模板，通常为3*3，5*5区域，也可以是不同的的形状，如线状，圆形，十字形，圆环形等。&lt;/p&gt;
+
+&lt;p&gt;实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function [retval] = middle_filter (matrix,n)
+#转成double计算
+rst=double(matrix);
+[row, column]=size(matrix);
+for i=1:row-n+1
+  for j=1:row-n+1
+    #取出从(i,j)开始的n行n列元素,即模板(n×n的)
+    col = rst(i:i+(n-1),j:j+(n-1));
+    #将分块矩阵变为一个行矩阵
+    tmp = []
+    for index=1:n
+      tmp=[tmp,col(index,:)];
+    end
+    #求中值
+    mm=median(tmp);
+    rst(i+(n-1)/2,j+(n-1)/2)=mm;
+  end
+end
+#转成uint输出
+retval = uint8(rst);
+endfunction
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;缺点：
+基于图像滤波器所包围区域中像素（灰度）的排序，选择适当的点来替代污染点的值，所以处理效果好。因为噪声的均值不为0，所以均值滤波不能很好地去除噪声点&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;p&gt;原始图片(被脉冲噪声污染的电路板的图像)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4eb1ce8mdj20cn0c8tcw.jpg&#34; alt=&#34;原始图片&#34; title=&#34;原始图片&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;处理之后&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ww4.sinaimg.cn/mw690/6f4077f3jw1f4eb1bycogj20cn0c8mxv.jpg&#34; alt=&#34;处理之后&#34; title=&#34;处理之后&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;（—— 同时发于简书）&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>亲爱的，你听我说</title>
@@ -387,57 +552,6 @@ as&lt;/p&gt;
       
       <guid>http://blog.xyj.name/post/do-things-together/</guid>
       <description>&lt;p&gt;文化，是一群人的习惯。文化的形成是个不停筛选的过程，目的是只留下大家相同的习惯和有相同习惯的人。企业文化也一样。与其去改变来适应，不如找到和自己臭味相投的人和组织。改变很难，还要无时无刻面临淘汰。和喜欢的人，做不做喜欢的事不太重要。做喜欢的事，有没有喜欢的人都会继续。和不喜欢的人做不喜欢的事，挺惨！&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>锻炼笔记</title>
-      <link>http://blog.xyj.name/post/body-training/</link>
-      <pubDate>Mon, 10 Aug 2015 02:20:31 +0800</pubDate>
-      
-      <guid>http://blog.xyj.name/post/body-training/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;h2 id=&#34;料理好身体才能做更多的事情:9ec043ce0d25eb5ac1c147f6ef7835a6&#34;&gt;料理好身体才能做更多的事情&lt;/h2&gt;
-
-&lt;p&gt;目标：&lt;/p&gt;
-
-&lt;p&gt;.  每周三次有氧运动&lt;/p&gt;
-
-&lt;p&gt;.  锻炼耐力&lt;/p&gt;
-
-&lt;p&gt;.  体重控制在65kg&lt;/p&gt;
-
-&lt;p&gt;.  肌肉塑性&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;20150810，一周没跑30m慢跑感觉有点累，心率最高159还不错。跑前体重72.7最近最低值。&lt;/li&gt;
-&lt;li&gt;20150813，30分钟椭圆机10分钟慢跑，天太热多了真受不了。看了硬派健身不知道该怎么运动了，制定个系统的计划该提上日程了。今天心率154，体重72.5怀疑秤不准。&lt;/li&gt;
-&lt;li&gt;20150814，30分钟栯圆机，最大心率到160，不错&lt;/li&gt;
-&lt;li&gt;20150825，最近在看硬派健身这本书，和自己掌握的很多健身减脂知识相悖。特别是关于跑步的，有点不太敢跑了。30分钟椭圆机15分钟HIIT，最大心率154。&lt;/li&gt;
-&lt;li&gt;20150827，晚睡真的挺害人的。今天就坚持了15分钟HIIT，15分钟椭圆机累的气喘吁吁。爬楼梯明显感觉到头晕。&lt;/li&gt;
-&lt;li&gt;20150831，周末养了两天的肥膘今天有点跑不动了。30分钟椭圆机，15分钟HIIT，膝盖有点疼考虑换双鞋子了。&lt;/li&gt;
-&lt;li&gt;20150907，40分钟椭圆机，最近太懒该换双跑鞋跑跑步了&lt;/li&gt;
-&lt;li&gt;20151027，30分钟椭圆机，20分钟慢跑，最大心率153。有两个月没动了，长了不少肉&lt;/li&gt;
-&lt;li&gt;20151030，45分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20151103，30分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20151106，45分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20151116，40分钟椭圆机，10分钟慢跑&lt;/li&gt;
-&lt;li&gt;20151119，20分钟椭圆机，30分钟慢跑&lt;/li&gt;
-&lt;li&gt;20151123，30分钟慢跑，20分钟椭圆机，最大心率147&lt;/li&gt;
-&lt;li&gt;20151124，20分钟慢跑，20分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20151204，40分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20151210，20分钟椭圆机，30分钟慢跑&lt;/li&gt;
-&lt;li&gt;20151228，30分钟慢跑&lt;/li&gt;
-&lt;li&gt;20151230，30分钟椭圆机&lt;/li&gt;
-&lt;li&gt;20160104，20分钟椭圆机，30分钟慢跑&lt;/li&gt;
-&lt;li&gt;20160107，30分钟椭圆机，15分钟慢跑&lt;/li&gt;
-&lt;li&gt;20160329，30分慢跑，5.1km&lt;/li&gt;
-&lt;li&gt;20160401，30分慢跑，5.1km&lt;/li&gt;
-&lt;li&gt;20160405，30分慢跑，5.4km&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
