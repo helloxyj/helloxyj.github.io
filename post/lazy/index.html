@@ -1,157 +1,238 @@
 <!DOCTYPE html>
+<html><head>
+<title>懒惰是会传染的</title>
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="小眼睛的自言自语">
-		<link rel="icon" href="http://blog.xyj.name/favicon.ico">
-		<title>懒惰是会传染的 - 小眼睛的自言自语</title>
-		
-		<link rel="stylesheet" href="http://blog.xyj.name/css/highlight.js.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootie-docs.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/jqpagination.css">
-	</head>
 
-<body role="document">
 
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+<link rel="stylesheet" href="http://blog.xyj.name/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
+
+<script src="http://blog.xyj.name/js/loadCSS.js"></script>
+<script src="http://blog.xyj.name/js/table.js"></script>
+
+
+<script src="http://blog.xyj.name/js/toc.js"></script>
+
+
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://blog.xyj.name">
+    
+        <div class="nav-title">
+            小眼睛的自言自语
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/tags">
+                    Tags
+                </a>
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/categories">
+                    Categories
+                </a>
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://blog.xyj.name/">小眼睛的自言自语</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li ><a href="http://blog.xyj.name/">首页</a></li>
-			
-				
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-						
-							<li><a href="http://blog.xyj.name/categories/book">Book</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/feel">Feel</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/general">General</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/life">Life</a></li>
-						
-						</ul>
-					</li>
-				
-				</ul>
-			</div>
-		</div>
-	</nav>
+	Copyright©2020 xyj.name 版权所有
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
 
-<div class="container">
 
-<div class="row">
-	<div class="col-sm-8 doc-main">
-		<main role="main">
-			<article>
-				<a id="title"></a>
-				<h1 class="doc-entry-title">懒惰是会传染的</h1>
-				<div class="doc-entry-meta">
-					<span><time datetime="2015-11-10">November 10, 2015</time></span>
-				</div>
-				<section>
-					<p>6层的办公环境简陋的不像样子：没有前台，没有活动空间，窄小的茶水间，去趟卫生间仿佛是一场遥远的旅行。每天中午看到这样一幅景象，保安慵懒的靠在椅子上，保洁的阿姨悠闲的看着手机。六楼有蟑螂，早上来到猛地开灯会看到蟑螂在桌上乱爬，幸运的话他们还会光顾你的杯子。我们私下都在议论为什么之前在楼上办公没有搬下来就那么多蟑螂呢？</p>
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/tags">
+                        Tags
+                    </a>
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/categories">
+                        Categories
+                    </a>
+            
+            
+            <div class="toc">
 
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="http://blog.xyj.name">
+            小眼睛的自言自语
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://blog.xyj.name">
+        <div class="single-column-header-title">小眼睛的自言自语</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('/')">
+                <div class="post-title">
+                    懒惰是会传染的
+                    <div class="post-meta">
+                        <time itemprop="datePublished">
+                            2015-11-10 13:40
+                        </time>
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[general]</a>
+                                &nbsp;
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <p>6层的办公环境简陋的不像样子：没有前台，没有活动空间，窄小的茶水间，去趟卫生间仿佛是一场遥远的旅行。每天中午看到这样一幅景象，保安慵懒的靠在椅子上，保洁的阿姨悠闲的看着手机。六楼有蟑螂，早上来到猛地开灯会看到蟑螂在桌上乱爬，幸运的话他们还会光顾你的杯子。我们私下都在议论为什么之前在楼上办公没有搬下来就那么多蟑螂呢？</p>
 <p>楼上的保洁阿姨每天收拾两次垃圾，每次都会把垃圾桶里里外外擦拭干净，楼下的阿姨每天只收拾一次垃圾，不到万不得已绝对不会给你换垃圾袋的更不要说擦拭垃圾桶了。我好奇，同样是保洁两个人的态度真的差很多。我每天来到公司时基本上没有几个人，楼上的阿姨已经开始收拾卫生，开朗的和周围的人打着招呼。楼下的阿姨来的也挺早，先用手机看看电影。到点了开始收拾卫生，走到垃圾桶前看看东西多不多，东西少干脆就不收拾了。</p>
-
 <p>同样是6层，卫生间的保洁大叔每次都会盯着我洗杯子，然后低声的告诉我：您好，下次不要把带颜色的水倒这里了，这样我一天不知道要洗多少次增加我的工作量；您好，下次不要把这个扔这里了我不可能一直盯着收拾这里；您好，下次不要……</p>
-
 <p>同样是6层，保安大叔只是冷冷的坐着，或者是翘着二郎腿呆呆的靠在椅子上。来人了，不警惕不过问，静静的看着。大哥，给我那个快递单子我寄个快递。就在那里，自己拿吧。这个多少钱我也不知道，你自己打电话问吧……</p>
-
 <p>一样的员工服务团队，11层真的不是这样。保洁阿姨可以愉快的和每个人打招呼，勤快的收拾垃圾。保安大哥，细心的为你贴好快递单，告诉你这一单大概多少钱。还有抱歉的笑笑说，要不等快递来取件再给你打电话吧。我想说的是，这两拨人他们的态度截然相反。</p>
-
 <p>我尊重每个人的劳动，我也不会故意给他们带来不便。但我不认同他们的态度，对待工作的态度。而且在一个团队中，有人懒惰就会有人效仿。也许懒惰是可以传染的。就如同我们工作中，开始是个小团队大家不分彼此有了好点子马上实施，为了共同的目的没人在意多干一点少干一点。团队越来越大，边界越来越清晰，就会思想不一致。开始有人会推脱，会拒绝自己职责之外的事情，慢慢开始把工作引到别人那里，最后就开始偷工减料……A开始这样，B效仿A，C效仿B，就这样大家开始传染了。最终团队没有了斗志，涣散，解题，影响的仍然是自己。</p>
-
 <p><em>懒惰，不是自己的问题，因为懒惰是可以传染的。</em></p>
 
-				</section>
-			</article>
-		</main>
-	</div> 
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2015-11-10</p>
+                </div>
+                
+            </div>
+            
+            
+            <nav class="post-pagination">
 
-	
-<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
-	<div class="sidebar-module">
-		<div class="sidebar-toc">
-			<h4>Table of Contents</h4>
-			<ul>
-				<li><strong><a href="#title">懒惰是会传染的</a></strong></li>
-			</ul>
-			
-		</div>
-	</div>
-	<div class="sidebar-module">
-		<h4>Tags</h4>
-		<div class="tag-box">
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/sb">sb</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF">产品与技术</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%81%A5%E8%BA%AB">健身</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%87%8F%E8%84%82">减脂</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96">思维固化</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D">拒绝</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83">换位思考</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E9%9A%BE%E5%BE%97%E7%B3%8A%E6%B6%82">难得糊涂</a>
-		
-		</div>
-	</div>
+                
+                <a class="newer-posts" href="http://blog.xyj.name/post/ticket/">
+                    Next<br>车票
+                </a>
+                
+                
+                
+                <a class="older-posts" href="http://blog.xyj.name/post/the-dead-end/">
+                    Previous<br>烈日灼心-观后感
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
 </div>
 
-</div> 
-
-
-<hr />
-
-<div class="row">
-	<div class="col-sm-8">
-		<p class="doc-footer-em"><a href="#">Back to TOP</a></p>
-	</div>
-</div>
-
-</div> 
-
-<footer class="doc-footer">
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<p>Copyright©2016 xyj.name 版权所有</p>
-	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
-</footer>
-
-
-
-<script src="http://blog.xyj.name/js/jquery-1.11.2.min.js"></script>
-<script src="http://blog.xyj.name/js/bootstrap.min.js"></script>
-
-<script src="http://blog.xyj.name/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="http://blog.xyj.name/js/ie10-viewport-bug-workaround.js"></script>
-<script src="http://blog.xyj.name/js/jquery.jqpagination-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){$(".pagination").jqPagination({link_string:"page/{page_number}/",page_string:"Page {current_page} of {max_page}",paged:function(a){location.href="page/"+a+"/"}})});
-</script>
-</body>
+	Copyright©2020 xyj.name 版权所有
+	</div>
+    	</div>
+    <script src="http://blog.xyj.name/js/journal.js"></script>
+    </body>
 </html>

@@ -1,161 +1,241 @@
 <!DOCTYPE html>
+<html><head>
+<title>为什么健身</title>
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="小眼睛的自言自语">
-		<link rel="icon" href="http://blog.xyj.name/favicon.ico">
-		<title>为什么健身 - 小眼睛的自言自语</title>
-		
-		<link rel="stylesheet" href="http://blog.xyj.name/css/highlight.js.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootie-docs.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/jqpagination.css">
-	</head>
 
-<body role="document">
 
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+<link rel="stylesheet" href="http://blog.xyj.name/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
+
+<script src="http://blog.xyj.name/js/loadCSS.js"></script>
+<script src="http://blog.xyj.name/js/table.js"></script>
+
+
+<script src="http://blog.xyj.name/js/toc.js"></script>
+
+
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://blog.xyj.name">
+    
+        <div class="nav-title">
+            小眼睛的自言自语
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/tags">
+                    Tags
+                </a>
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/categories">
+                    Categories
+                </a>
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://blog.xyj.name/">小眼睛的自言自语</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li ><a href="http://blog.xyj.name/">首页</a></li>
-			
-				
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-						
-							<li><a href="http://blog.xyj.name/categories/book">Book</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/feel">Feel</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/general">General</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/life">Life</a></li>
-						
-						</ul>
-					</li>
-				
-				</ul>
-			</div>
-		</div>
-	</nav>
+	Copyright©2020 xyj.name 版权所有
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
 
-<div class="container">
 
-<div class="row">
-	<div class="col-sm-8 doc-main">
-		<main role="main">
-			<article>
-				<a id="title"></a>
-				<h1 class="doc-entry-title">为什么健身</h1>
-				<div class="doc-entry-meta">
-					<span><time datetime="2016-04-05">April 05, 2016</time></span>
-				</div>
-				<section>
-					<blockquote>
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/tags">
+                        Tags
+                    </a>
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/categories">
+                        Categories
+                    </a>
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="http://blog.xyj.name">
+            小眼睛的自言自语
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://blog.xyj.name">
+        <div class="single-column-header-title">小眼睛的自言自语</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('/')">
+                <div class="post-title">
+                    为什么健身
+                    <div class="post-meta">
+                        <time itemprop="datePublished">
+                            2016-04-05 11:57
+                        </time>
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[life]</a>
+                                &nbsp;
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <blockquote>
 <p>—— 同时发于简书</p>
 </blockquote>
-
-<p><img src="http://ww2.sinaimg.cn/mw690/6f4077f3jw1f2lphgf3nzj20a00a0aa1.jpg" alt="图片源自网络" title="图片源自网络" /></p>
-
+<p><img src="http://ww2.sinaimg.cn/mw690/6f4077f3jw1f2lphgf3nzj20a00a0aa1.jpg" alt="图片源自网络" title="图片源自网络"></p>
 <p>看了好多关于健身的书、杂志、网络上的小贴士，80%的都把健身带来的视觉冲击放在第一位。貌似锻炼身体只是是为了自己更好看可以吸引异性，让男人有腹肌胸肌看起来更加健壮，让女人丰胸提臀更加性感。</p>
-
 <p>我身边有人喜欢在网络上晒出健身照片，然后再配上『一个人的健身房』，『挥汗如雨』诸如此类的文字。或者小有成绩后晒个腹肌、跑步公里数，然后守着手机隔几分钟刷一下看看大家的赞叹，乐的满足。在聚会上这个不吃哪个不喝，然后大谈健身理论还要不经意的秀一下，嘴角中露出的是洋洋得意。我突然明白，原来旅行和健身的目的真的是发微博发朋友圈啊。</p>
-
 <p>我去健身房从来没想过要练成什么样子。我也渴望拥有八块腹肌和结实的胸肌，但我不会以此作为目标和动力，更不会为了这个故意炫耀、或者放弃享受我现在的生活，觉得这样失去了锻炼的意义。我们练就好的身体不就是为了更好的享受这个世界吗？</p>
-
 <p>我去健身不是为了完美的身材，是为了和孩子玩举高高的时候我可以一次次的把他抛起来又稳稳的接住。而不是累的气喘吁吁跟他说，爸爸累了休息一下休息一下。</p>
-
 <p>我去健身不是为了拥有炫耀的资本，是为了每次和家人一起游玩时，我可以扛着最终的负担从容的走在最前面。一路上为他们拍照，与他们嬉戏，停下来只是为了欣赏风景而不是休息。</p>
-
 <p>我去健身是为了在别人冒犯我的家人时，我可以用力量将其制服，而不是看到对方块头、或者力量的悬殊而心生胆怯。我去健身是为了下次流感来袭时我可以平安度过，是为了自己保持健康不给别人单来负担，是为了尽可能的延长自己的寿命陪伴子女更长的时间。</p>
 
-				</section>
-			</article>
-		</main>
-	</div> 
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2016-04-05</p>
+                </div>
+                
+            </div>
+            
+            
+            <nav class="post-pagination">
 
-	
-<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
-	<div class="sidebar-module">
-		<div class="sidebar-toc">
-			<h4>Table of Contents</h4>
-			<ul>
-				<li><strong><a href="#title">为什么健身</a></strong></li>
-			</ul>
-			
-		</div>
-	</div>
-	<div class="sidebar-module">
-		<h4>Tags</h4>
-		<div class="tag-box">
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/sb">sb</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF">产品与技术</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%81%A5%E8%BA%AB">健身</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%87%8F%E8%84%82">减脂</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96">思维固化</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D">拒绝</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83">换位思考</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E9%9A%BE%E5%BE%97%E7%B3%8A%E6%B6%82">难得糊涂</a>
-		
-		</div>
-	</div>
+                
+                <a class="newer-posts" href="http://blog.xyj.name/post/octave/">
+                    Next<br>Octave简单应用(一)
+                </a>
+                
+                
+                
+                <a class="older-posts" href="http://blog.xyj.name/post/jiaolv/">
+                    Previous<br>周日焦虑症
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
 </div>
 
-</div> 
-
-
-<hr />
-
-<div class="row">
-	<div class="col-sm-8">
-		<p class="doc-footer-em"><a href="#">Back to TOP</a></p>
-	</div>
-</div>
-
-</div> 
-
-<footer class="doc-footer">
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<p>Copyright©2016 xyj.name 版权所有</p>
-	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
-</footer>
-
-
-
-<script src="http://blog.xyj.name/js/jquery-1.11.2.min.js"></script>
-<script src="http://blog.xyj.name/js/bootstrap.min.js"></script>
-
-<script src="http://blog.xyj.name/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="http://blog.xyj.name/js/ie10-viewport-bug-workaround.js"></script>
-<script src="http://blog.xyj.name/js/jquery.jqpagination-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){$(".pagination").jqPagination({link_string:"page/{page_number}/",page_string:"Page {current_page} of {max_page}",paged:function(a){location.href="page/"+a+"/"}})});
-</script>
-</body>
+	Copyright©2020 xyj.name 版权所有
+	</div>
+    	</div>
+    <script src="http://blog.xyj.name/js/journal.js"></script>
+    </body>
 </html>

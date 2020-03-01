@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 小眼睛的自言自语</title>
+    <link>http://blog.xyj.name/categories/</link>
+    <description>Recent content in Categories on 小眼睛的自言自语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright©2020 xyj.name 版权所有</copyright>
+    <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.xyj.name/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>general</title>
+      <link>http://blog.xyj.name/categories/general/</link>
+      <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>http://blog.xyj.name/categories/life/</link>
+      <pubDate>Tue, 05 Apr 2016 11:57:09 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>feel</title>
+      <link>http://blog.xyj.name/categories/feel/</link>
+      <pubDate>Wed, 20 Jan 2016 12:05:32 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/feel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book</title>
+      <link>http://blog.xyj.name/categories/book/</link>
+      <pubDate>Thu, 29 Oct 2015 18:23:14 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/book/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>换位思考 on 小眼睛的自言自语</title>
@@ -6,9 +6,11 @@
     <description>Recent content in 换位思考 on 小眼睛的自言自语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright©2016 xyj.name 版权所有</copyright>
+    <copyright>Copyright©2020 xyj.name 版权所有</copyright>
     <lastBuildDate>Wed, 21 Oct 2015 06:52:12 +0800</lastBuildDate>
-    <atom:link href="http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>换位思考</title>
@@ -16,8 +18,7 @@
       <pubDate>Wed, 21 Oct 2015 06:52:12 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/change-mind/</guid>
-      <description>&lt;p&gt;这世界有换位思考吗？换位思考，是感同身受是把自己代入同样的场景，感受着你的感受。可是，你又不是我，怎么知道我的痛苦？痛的不是你，你又怎么知道我如何想的？&lt;/p&gt;
-</description>
+      <description>这世界有换位思考吗？换位思考，是感同身受是把自己代入同样的场景，感受着你的感受。可是，你又不是我，怎么知道我的痛苦？痛的不是你，你又怎么知道我如何想的？</description>
     </item>
     
   </channel>

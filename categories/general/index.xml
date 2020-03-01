@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>General on 小眼睛的自言自语</title>
+    <title>general on 小眼睛的自言自语</title>
     <link>http://blog.xyj.name/categories/general/</link>
-    <description>Recent content in General on 小眼睛的自言自语</description>
+    <description>Recent content in general on 小眼睛的自言自语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright©2016 xyj.name 版权所有</copyright>
+    <copyright>Copyright©2020 xyj.name 版权所有</copyright>
     <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
-    <atom:link href="http://blog.xyj.name/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://blog.xyj.name/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Octave简单应用(一)</title>
@@ -16,163 +18,15 @@
       <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/octave/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4eedagp71j203r03rjrb.jpg&#34; alt=&#34;Octave&#34; title=&#34;Octave&#34; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://wiki.octave.org/GNU_Octave_Wiki&#34;&gt;Octave&lt;/a&gt; 是一个旨在提供与Matlab语法兼容的开放源代码科学计算及数值分析的工具；它提供了方便的互动命令列接口来解决线性与非线性的数值运算问题，并可将计算结果可视化，与高价的商业软体MATLAB语法几乎兼容&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;环境搭建:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;环境搭建&lt;/h2&gt;
-
-&lt;h3 id=&#34;安装octave:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;安装octave&lt;/h3&gt;
-
-&lt;p&gt;Mac OSX平台下，用神器Homebrew安装&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew tap homebrew/science
-brew update &amp;amp;&amp;amp; brew upgrade 
-brew install octave 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;安装完成看到如下提示：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;setenv(&#39;GNUTERM&#39;,&#39;qt&#39;)    # Requires QT; install gnuplot --with-qt
-setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)   # Requires XQuartz; install gnuplot --with-x11
-setenv(&#39;GNUTERM&#39;,&#39;wxt&#39;)   # Requires wxmac; install gnuplot --with-wxmac
-setenv(&#39;GNUTERM&#39;,&#39;aqua&#39;)  # Requires AquaTerm; install gnuplot --with-aquaterm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里提示我们要设置默认的graphics toolkit。首先选择GUI的展示基于那种框架，我选择x11。安装gnuplot：&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;brew install gnuplot --with-x11&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;配置:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;配置&lt;/h3&gt;
-
-&lt;p&gt;在 .bash_profile种添加环境变量&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;配置默认的graphics toolkit ，在配置文件
-&lt;code&gt;/usr/local/share/octave/site/m/startup/octaverc&lt;/code&gt; 中添加 &lt;code&gt;setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;启动:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;启动&lt;/h3&gt;
-
-&lt;p&gt;直接命令行执行octave ，或者保存成脚本，打开脚本编辑器新加脚本&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tell application &amp;quot;Terminal&amp;quot;
- do script &amp;quot;`which octave`; exit&amp;quot;
-end tell
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;保存成octave.app，在Launchapad中可以看到octave.app的图标，点击即可打开ocatave&lt;/p&gt;
-
-&lt;p&gt;在命令窗口种安装需要的package，比如image：&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pkg install -forge image&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;简单操作:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;简单操作&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;矩阵操作&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww1.sinaimg.cn/mw690/6f4077f3jw1f4ecnkt3spj20aw0dpgm1.jpg&#34; alt=&#34;矩阵操作&#34; title=&#34;矩阵操作&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;函数图像&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww3.sinaimg.cn/mw690/6f4077f3jw1f4ecunwoebj20gk0glt9u.jpg&#34; alt=&#34;函数图像&#34; title=&#34;函数图像&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;几种滤波器实现:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;几种滤波器实现&lt;/h2&gt;
-
-&lt;h3 id=&#34;均值滤波器:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;均值滤波器&lt;/h3&gt;
-
-&lt;p&gt;原理：&lt;/p&gt;
-
-&lt;p&gt;均值滤波也称为线性滤波，其采用的主要方法为邻域平均法。线性滤波的基本原理是用均值代替原图像中的各个像素值，即对待处理的当前像素点（x，y），选择一个模板，该模板由其近邻的若干像素组成，求模板中所有像素的均值，再把该均值赋予当前像素点（x，y），作为处理后图像在该点上的灰度g（x，y），即g（x，y）=1/m ∑f（x，y） m为该模板中包含当前像素在内的像素总个数。&lt;/p&gt;
-
-&lt;p&gt;实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function [retval] = avg_filter (matrix,n)
-##转成double计算
-rst = double(matrix);
-[row, column] = size(matrix);
-model(1:n,1:n) = 1
-for i=1:row-n+1
-  for j=1:column-n+1
-    c = rst(i:i+(n-1),j:j+(n-1)).*model;
-    s = sum(sum(c));
-    #模板内像素平均值
-    rst(i+(n-1)/2,j+(n-1)/2) = s/(n*n);
-  end
-end
-retval = uint8(rst);
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;缺点：&lt;/p&gt;
-
-&lt;p&gt;它不能很好地保护图像细节，在图像去噪的同时也破坏了图像的细节部分，从而使图像变得模糊，不能很好地去除噪声点&lt;/p&gt;
-
-&lt;p&gt;示例：&lt;/p&gt;
-
-&lt;p&gt;原始图片&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4ed599leaj20c1090js0.jpg&#34; alt=&#34;原始图片&#34; title=&#34;原始图片&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;结果图片&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww3.sinaimg.cn/mw690/6f4077f3jw1f4ed59ml2dj20by08wmxo.jpg&#34; alt=&#34;结果图片&#34; title=&#34;结果图片&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;中值滤波器:3c8609161f4efd1f737bc9e1847d4269&#34;&gt;中值滤波器&lt;/h3&gt;
-
-&lt;p&gt;原理：&lt;/p&gt;
-
-&lt;p&gt;中值滤波是基于排序统计理论的一种能有效抑制噪声的非线性信号处理技术，中值滤波的基本原理是把数字图像或数字序列中一点的值用该点的一个邻域中各点值的中值代替，让周围的像素值接近的真实值，从而消除孤立的噪声点。方法是用某种结构的二维滑动模板，将板内像素按照像素值的大小进行排序，生成单调上升（或下降）的为二维数据序列。二维中值滤波输出为g（x,y）=med{f(x-k,y-l),(k,l∈W)} ，其中，f(x,y)，g(x,y)分别为原始图像和处理后图像。W为二维模板，通常为3*3，5*5区域，也可以是不同的的形状，如线状，圆形，十字形，圆环形等。&lt;/p&gt;
-
-&lt;p&gt;实现：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function [retval] = middle_filter (matrix,n)
-#转成double计算
-rst=double(matrix);
-[row, column]=size(matrix);
-for i=1:row-n+1
-  for j=1:row-n+1
-    #取出从(i,j)开始的n行n列元素,即模板(n×n的)
-    col = rst(i:i+(n-1),j:j+(n-1));
-    #将分块矩阵变为一个行矩阵
-    tmp = []
-    for index=1:n
-      tmp=[tmp,col(index,:)];
-    end
-    #求中值
-    mm=median(tmp);
-    rst(i+(n-1)/2,j+(n-1)/2)=mm;
-  end
-end
-#转成uint输出
-retval = uint8(rst);
-endfunction
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;缺点：
-基于图像滤波器所包围区域中像素（灰度）的排序，选择适当的点来替代污染点的值，所以处理效果好。因为噪声的均值不为0，所以均值滤波不能很好地去除噪声点&lt;/p&gt;
-
-&lt;p&gt;示例：&lt;/p&gt;
-
-&lt;p&gt;原始图片(被脉冲噪声污染的电路板的图像)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww2.sinaimg.cn/mw690/6f4077f3jw1f4eb1ce8mdj20cn0c8tcw.jpg&#34; alt=&#34;原始图片&#34; title=&#34;原始图片&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;处理之后&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww4.sinaimg.cn/mw690/6f4077f3jw1f4eb1bycogj20cn0c8mxv.jpg&#34; alt=&#34;处理之后&#34; title=&#34;处理之后&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（—— 同时发于简书）&lt;/p&gt;
-</description>
+      <description>Octave 是一个旨在提供与Matlab语法兼容的开放源代码科学计算及数值分析的工具；它提供了方便的互动命令列接口来解决线性与非线性的数值运算问题，并可将计算结果可视化，与高价的商业软体MATLAB语法几乎兼容
+ 环境搭建 安装octave Mac OSX平台下，用神器Homebrew安装
+brew tap homebrew/science brew update &amp;amp;&amp;amp; brew upgrade brew install octave 安装完成看到如下提示：
+setenv(&#39;GNUTERM&#39;,&#39;qt&#39;) # Requires QT; install gnuplot --with-qt setenv(&#39;GNUTERM&#39;,&#39;x11&#39;) # Requires XQuartz; install gnuplot --with-x11 setenv(&#39;GNUTERM&#39;,&#39;wxt&#39;) # Requires wxmac; install gnuplot --with-wxmac setenv(&#39;GNUTERM&#39;,&#39;aqua&#39;) # Requires AquaTerm; install gnuplot --with-aquaterm 这里提示我们要设置默认的graphics toolkit。首先选择GUI的展示基于那种框架，我选择x11。安装gnuplot：
+brew install gnuplot --with-x11
+配置 在 .bash_profile种添加环境变量
+export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig 配置默认的graphics toolkit ，在配置文件 /usr/local/share/octave/site/m/startup/octaverc 中添加 setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)
+启动 直接命令行执行octave ，或者保存成脚本，打开脚本编辑器新加脚本
+tell application &amp;quot;Terminal&amp;quot; do script &amp;quot;`which octave`; exit&amp;quot; end tell 保存成octave.</description>
     </item>
     
     <item>
@@ -181,48 +35,14 @@ endfunction
       <pubDate>Mon, 25 Jan 2016 11:29:15 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/jiaolv/</guid>
-      <description>&lt;p&gt;###什么是周日焦虑症&lt;/p&gt;
-
-&lt;p&gt;不知道你们有没有这样的经历：每周日晚上八点，焦虑开始悄悄袭来，仿佛一切都迫在眉睫。明天有领导交待的任务，这个季度要达到的目标，有重要的会，答应朋友的事情……&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ww1.sinaimg.cn/mw690/6f4077f3jw1f0e7g64cz6j20du0alt9a.jpg&#34; alt=&#34;图片源于网络&#34; title=&#34;图片源于网络&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;周日焦虑，是指上班族最痛苦的时候并不是工作日，而是假日结束之时，工作开始之前。还没工作的朋友也许体会不到，不过相信每个人都经历过开学恐慌症吧。因为放假的时候没有好好做作业，快要开学了发现还有好几大本作业……感受类似，周日焦虑可要比开学恐慌来的次数更多。&lt;/p&gt;
-
-&lt;p&gt;###为什么会焦虑&lt;/p&gt;
-
-&lt;p&gt;#####1. 拖沓
-我
-#####2. 即将要做的事情。
-as
-#####3. 能力不足，可以预见后果不好
-as&lt;/p&gt;
-
-&lt;p&gt;『我们真正的痛苦，来自于因耽误而产生的持续的焦虑，来自于因最后时刻所完成项目质量之低劣而产生的负罪感，还来自于因为失去人生中许多机会而产生的深深的悔恨。』——《战胜拖拉》&lt;/p&gt;
-
-&lt;p&gt;###我是怎么解决的
-+ 合理的目标&lt;/p&gt;
-
-&lt;p&gt;所有事情都有个合理的目标SMART原则&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Todo List&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我在Evernote的有个todo list，列出来最近7天需要完成的事情。完成一个划掉一个。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;专心做一件事&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;番茄工作法。重要的事情，特别是工作中的事情&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;兴趣&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;保留借口，只谈心声&lt;/p&gt;
-</description>
+      <description>什么是周日焦虑症 不知道你们有没有这样的经历：每周日晚上八点，焦虑开始悄悄袭来，仿佛一切都迫在眉睫。明天有领导交待的任务，这个季度要达到的目标，有重要的会，答应朋友的事情……
+周日焦虑，是指上班族最痛苦的时候并不是工作日，而是假日结束之时，工作开始之前。还没工作的朋友也许体会不到，不过相信每个人都经历过开学恐慌症吧。因为放假的时候没有好好做作业，快要开学了发现还有好几大本作业……感受类似，周日焦虑可要比开学恐慌来的次数更多。
+为什么会焦虑 1. 拖沓 2. 即将要做的事情。 3. 能力不足，可以预见后果不好 『我们真正的痛苦，来自于因耽误而产生的持续的焦虑，来自于因最后时刻所完成项目质量之低劣而产生的负罪感，还来自于因为失去人生中许多机会而产生的深深的悔恨。』——《战胜拖拉》
+###我是怎么解决的
+ 合理的目标  所有事情都有个合理的目标SMART原则
+ Todo List  我在Evernote的有个todo list，列出来最近7天需要完成的事情。完成一个划掉一个。
+ 专心做一件事  番茄工作法。重要的事情，特别是工作中的事情
+ 兴趣  保留借口，只谈心声</description>
     </item>
     
     <item>
@@ -231,8 +51,7 @@ as&lt;/p&gt;
       <pubDate>Tue, 22 Dec 2015 11:44:57 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/ticket/</guid>
-      <description>&lt;p&gt;多花几百块买车票说贵，吃饭唱K好几大百毫不在乎。多花几千买全价机票肉疼，满世界去“洗涤心灵”能一掷千金。说白了就是觉得回家不值，陪家人不值。这种人就是雾霾，我躲得远远的。&lt;/p&gt;
-</description>
+      <description>多花几百块买车票说贵，吃饭唱K好几大百毫不在乎。多花几千买全价机票肉疼，满世界去“洗涤心灵”能一掷千金。说白了就是觉得回家不值，陪家人不值。这种人就是雾霾，我躲得远远的。</description>
     </item>
     
     <item>
@@ -241,20 +60,13 @@ as&lt;/p&gt;
       <pubDate>Tue, 10 Nov 2015 13:40:35 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/lazy/</guid>
-      <description>&lt;p&gt;6层的办公环境简陋的不像样子：没有前台，没有活动空间，窄小的茶水间，去趟卫生间仿佛是一场遥远的旅行。每天中午看到这样一幅景象，保安慵懒的靠在椅子上，保洁的阿姨悠闲的看着手机。六楼有蟑螂，早上来到猛地开灯会看到蟑螂在桌上乱爬，幸运的话他们还会光顾你的杯子。我们私下都在议论为什么之前在楼上办公没有搬下来就那么多蟑螂呢？&lt;/p&gt;
-
-&lt;p&gt;楼上的保洁阿姨每天收拾两次垃圾，每次都会把垃圾桶里里外外擦拭干净，楼下的阿姨每天只收拾一次垃圾，不到万不得已绝对不会给你换垃圾袋的更不要说擦拭垃圾桶了。我好奇，同样是保洁两个人的态度真的差很多。我每天来到公司时基本上没有几个人，楼上的阿姨已经开始收拾卫生，开朗的和周围的人打着招呼。楼下的阿姨来的也挺早，先用手机看看电影。到点了开始收拾卫生，走到垃圾桶前看看东西多不多，东西少干脆就不收拾了。&lt;/p&gt;
-
-&lt;p&gt;同样是6层，卫生间的保洁大叔每次都会盯着我洗杯子，然后低声的告诉我：您好，下次不要把带颜色的水倒这里了，这样我一天不知道要洗多少次增加我的工作量；您好，下次不要把这个扔这里了我不可能一直盯着收拾这里；您好，下次不要……&lt;/p&gt;
-
-&lt;p&gt;同样是6层，保安大叔只是冷冷的坐着，或者是翘着二郎腿呆呆的靠在椅子上。来人了，不警惕不过问，静静的看着。大哥，给我那个快递单子我寄个快递。就在那里，自己拿吧。这个多少钱我也不知道，你自己打电话问吧……&lt;/p&gt;
-
-&lt;p&gt;一样的员工服务团队，11层真的不是这样。保洁阿姨可以愉快的和每个人打招呼，勤快的收拾垃圾。保安大哥，细心的为你贴好快递单，告诉你这一单大概多少钱。还有抱歉的笑笑说，要不等快递来取件再给你打电话吧。我想说的是，这两拨人他们的态度截然相反。&lt;/p&gt;
-
-&lt;p&gt;我尊重每个人的劳动，我也不会故意给他们带来不便。但我不认同他们的态度，对待工作的态度。而且在一个团队中，有人懒惰就会有人效仿。也许懒惰是可以传染的。就如同我们工作中，开始是个小团队大家不分彼此有了好点子马上实施，为了共同的目的没人在意多干一点少干一点。团队越来越大，边界越来越清晰，就会思想不一致。开始有人会推脱，会拒绝自己职责之外的事情，慢慢开始把工作引到别人那里，最后就开始偷工减料……A开始这样，B效仿A，C效仿B，就这样大家开始传染了。最终团队没有了斗志，涣散，解题，影响的仍然是自己。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;懒惰，不是自己的问题，因为懒惰是可以传染的。&lt;/em&gt;&lt;/p&gt;
-</description>
+      <description>6层的办公环境简陋的不像样子：没有前台，没有活动空间，窄小的茶水间，去趟卫生间仿佛是一场遥远的旅行。每天中午看到这样一幅景象，保安慵懒的靠在椅子上，保洁的阿姨悠闲的看着手机。六楼有蟑螂，早上来到猛地开灯会看到蟑螂在桌上乱爬，幸运的话他们还会光顾你的杯子。我们私下都在议论为什么之前在楼上办公没有搬下来就那么多蟑螂呢？
+楼上的保洁阿姨每天收拾两次垃圾，每次都会把垃圾桶里里外外擦拭干净，楼下的阿姨每天只收拾一次垃圾，不到万不得已绝对不会给你换垃圾袋的更不要说擦拭垃圾桶了。我好奇，同样是保洁两个人的态度真的差很多。我每天来到公司时基本上没有几个人，楼上的阿姨已经开始收拾卫生，开朗的和周围的人打着招呼。楼下的阿姨来的也挺早，先用手机看看电影。到点了开始收拾卫生，走到垃圾桶前看看东西多不多，东西少干脆就不收拾了。
+同样是6层，卫生间的保洁大叔每次都会盯着我洗杯子，然后低声的告诉我：您好，下次不要把带颜色的水倒这里了，这样我一天不知道要洗多少次增加我的工作量；您好，下次不要把这个扔这里了我不可能一直盯着收拾这里；您好，下次不要……
+同样是6层，保安大叔只是冷冷的坐着，或者是翘着二郎腿呆呆的靠在椅子上。来人了，不警惕不过问，静静的看着。大哥，给我那个快递单子我寄个快递。就在那里，自己拿吧。这个多少钱我也不知道，你自己打电话问吧……
+一样的员工服务团队，11层真的不是这样。保洁阿姨可以愉快的和每个人打招呼，勤快的收拾垃圾。保安大哥，细心的为你贴好快递单，告诉你这一单大概多少钱。还有抱歉的笑笑说，要不等快递来取件再给你打电话吧。我想说的是，这两拨人他们的态度截然相反。
+我尊重每个人的劳动，我也不会故意给他们带来不便。但我不认同他们的态度，对待工作的态度。而且在一个团队中，有人懒惰就会有人效仿。也许懒惰是可以传染的。就如同我们工作中，开始是个小团队大家不分彼此有了好点子马上实施，为了共同的目的没人在意多干一点少干一点。团队越来越大，边界越来越清晰，就会思想不一致。开始有人会推脱，会拒绝自己职责之外的事情，慢慢开始把工作引到别人那里，最后就开始偷工减料……A开始这样，B效仿A，C效仿B，就这样大家开始传染了。最终团队没有了斗志，涣散，解题，影响的仍然是自己。
+懒惰，不是自己的问题，因为懒惰是可以传染的。</description>
     </item>
     
     <item>
@@ -263,16 +75,11 @@ as&lt;/p&gt;
       <pubDate>Wed, 05 Aug 2015 12:07:15 +0800</pubDate>
       
       <guid>http://blog.xyj.name/post/why-write-blog/</guid>
-      <description>&lt;p&gt;要不要再开个博客，纠结了好久。以前写过博客、微博，写过笔记都没有坚持下来，这次会不会还半途而废？琢磨了好一阵，一来读书那阵就喜欢写点东西，二来受到mactalk的影响有些心动，像mac君一样代码文章齐飞着实让人羡慕。于是买了域名空间，经过漫长又扯淡的备案终于开博了。&lt;/p&gt;
-
-&lt;p&gt;随着年龄的增加、责任越来越大反而好些事情越来越想不通了。每天面对各种问题心中有无数个结，觉得应该把这些情绪的变化记录下来、沉淀下来让自己思考、前行，就如同副标题的那句话“书写是为了更好的思考”。&lt;/p&gt;
-
-&lt;p&gt;生活中夫妻矛盾的处理、工作中同事关系的维护、读了一本好书、得到一点感悟，点点滴滴都可以被记录。我想，十年后当孩子长大我们老去，再回过头看这些文字时带着满满的感动、唏嘘。这些文字都变成了一种财富载着成长与记忆。&lt;/p&gt;
-
-&lt;p&gt;从另一个角度来说，发现需要学习的东西有太多太多了。学习控制情绪，学做产品学带团队，学专业知识。每个经历和付出，逼着自己写出来可以加深印象，因为文字可以被别人看到那就会有所顾虑就要付出加倍的努力。&lt;/p&gt;
-
-&lt;p&gt;总之理由有好多，博客也开了。接下来就是如何从坚持到热爱到习惯，从第一个十年开始，努力做到：编得出优雅的代码；写得了漂亮的文章；做得成牛逼的产品；带得出优秀的团队。加油，小眼睛！&lt;/p&gt;
-</description>
+      <description>要不要再开个博客，纠结了好久。以前写过博客、微博，写过笔记都没有坚持下来，这次会不会还半途而废？琢磨了好一阵，一来读书那阵就喜欢写点东西，二来受到mactalk的影响有些心动，像mac君一样代码文章齐飞着实让人羡慕。于是买了域名空间，经过漫长又扯淡的备案终于开博了。
+随着年龄的增加、责任越来越大反而好些事情越来越想不通了。每天面对各种问题心中有无数个结，觉得应该把这些情绪的变化记录下来、沉淀下来让自己思考、前行，就如同副标题的那句话“书写是为了更好的思考”。
+生活中夫妻矛盾的处理、工作中同事关系的维护、读了一本好书、得到一点感悟，点点滴滴都可以被记录。我想，十年后当孩子长大我们老去，再回过头看这些文字时带着满满的感动、唏嘘。这些文字都变成了一种财富载着成长与记忆。
+从另一个角度来说，发现需要学习的东西有太多太多了。学习控制情绪，学做产品学带团队，学专业知识。每个经历和付出，逼着自己写出来可以加深印象，因为文字可以被别人看到那就会有所顾虑就要付出加倍的努力。
+总之理由有好多，博客也开了。接下来就是如何从坚持到热爱到习惯，从第一个十年开始，努力做到：编得出优雅的代码；写得了漂亮的文章；做得成牛逼的产品；带得出优秀的团队。加油，小眼睛！</description>
     </item>
     
   </channel>

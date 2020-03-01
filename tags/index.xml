@@ -1,23 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小眼睛的自言自语</title>
+    <title>Tags on 小眼睛的自言自语</title>
     <link>http://blog.xyj.name/tags/</link>
-    <description>Recent content on 小眼睛的自言自语</description>
+    <description>Recent content in Tags on 小眼睛的自言自语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright©2016 xyj.name 版权所有</copyright>
-    <lastBuildDate>Tue, 18 Aug 2015 11:56:34 +0800</lastBuildDate>
-    <atom:link href="http://blog.xyj.name/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright©2020 xyj.name 版权所有</copyright>
+    <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.xyj.name/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>和喜欢的人做喜欢的事</title>
-      <link>http://blog.xyj.name/post/do-things-together/</link>
-      <pubDate>Tue, 18 Aug 2015 11:56:34 +0800</pubDate>
+      <title>产品与技术</title>
+      <link>http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
       
-      <guid>http://blog.xyj.name/post/do-things-together/</guid>
-      <description>&lt;p&gt;文化，是一群人的习惯。文化的形成是个不停筛选的过程，目的是只留下大家相同的习惯和有相同习惯的人。企业文化也一样。与其去改变来适应，不如找到和自己臭味相投的人和组织。改变很难，还要无时无刻面临淘汰。和喜欢的人，做不做喜欢的事不太重要。做喜欢的事，有没有喜欢的人都会继续。和不喜欢的人做不喜欢的事，挺惨！&lt;/p&gt;
-</description>
+      <guid>http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SB</title>
+      <link>http://blog.xyj.name/tags/sb/</link>
+      <pubDate>Wed, 20 Jan 2016 12:05:32 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/sb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>换位思考</title>
+      <link>http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83/</link>
+      <pubDate>Wed, 21 Oct 2015 06:52:12 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>拒绝</title>
+      <link>http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D/</link>
+      <pubDate>Fri, 28 Aug 2015 02:30:51 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>健身</title>
+      <link>http://blog.xyj.name/tags/%E5%81%A5%E8%BA%AB/</link>
+      <pubDate>Mon, 10 Aug 2015 02:20:31 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/%E5%81%A5%E8%BA%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>减脂</title>
+      <link>http://blog.xyj.name/tags/%E5%87%8F%E8%84%82/</link>
+      <pubDate>Mon, 10 Aug 2015 02:20:31 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/%E5%87%8F%E8%84%82/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>思维固化</title>
+      <link>http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96/</link>
+      <pubDate>Thu, 06 Aug 2015 12:59:35 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96/</guid>
+      <description></description>
     </item>
     
   </channel>

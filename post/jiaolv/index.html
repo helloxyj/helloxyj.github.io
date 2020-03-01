@@ -1,185 +1,383 @@
 <!DOCTYPE html>
+<html><head>
+<title>周日焦虑症</title>
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
 
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="小眼睛的自言自语">
-		<link rel="icon" href="http://blog.xyj.name/favicon.ico">
-		<title>周日焦虑症 - 小眼睛的自言自语</title>
-		
-		<link rel="stylesheet" href="http://blog.xyj.name/css/highlight.js.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/theme.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/bootie-docs.css">
-		<link rel="stylesheet" href="http://blog.xyj.name/css/jqpagination.css">
-	</head>
 
-<body role="document">
 
+<script src="/vendor/js/jquery.min.js" ></script>
+<script src="/vendor/js/popper.min.js" ></script>
+<script src="/vendor/js/bootstrap.min.js" ></script>
+<script src="/vendor/js/smooth-scroll.polyfills.min.js" ></script>
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+<script src="/vendor/js/vue.min.js" ></script>
+
+
+
+
+<link rel="stylesheet" href="http://blog.xyj.name/scss/journal.min.75e350a979186b10ecf739a405199a5eaf37fd6bd3463a78ae5c70c634963fde.css" integrity="sha256-deNQqXkYaxDs9zmkBRmaXq83/WvTRjp4rlxwxjSWP94=" media="screen">
+
+<script src="http://blog.xyj.name/js/loadCSS.js"></script>
+<script src="http://blog.xyj.name/js/table.js"></script>
+
+
+<script src="http://blog.xyj.name/js/toc.js"></script>
+
+
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Noto+Serif+SC|Material+Icons");
+</script>
+
+
+
+
+
+
+</head><body>
+    	<div id="app"><div ref="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://blog.xyj.name">
+    
+        <div class="nav-title">
+            小眼睛的自言自语
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/tags">
+                    Tags
+                </a>
+        
+            
+                
+                
+                <a class="a-block nav-link-item false" href="/categories">
+                    Categories
+                </a>
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://blog.xyj.name/">小眼睛的自言自语</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li ><a href="http://blog.xyj.name/">首页</a></li>
+	Copyright©2020 xyj.name 版权所有
+	
+    </div>
+    
+</div><div ref="extraContainer" class="extra-container">
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
 			
 				
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-						
-							<li><a href="http://blog.xyj.name/categories/book">Book</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/feel">Feel</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/general">General</a></li>
-						
-							<li><a href="http://blog.xyj.name/categories/life">Life</a></li>
-						
-						</ul>
-					</li>
 				
-				</ul>
-			</div>
-		</div>
-	</nav>
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%91%a8%e6%97%a5%e7%84%a6%e8%99%91%e7%97%87" v-on:click="closeDrawer" id="什么是周日焦虑症-nav">
+										 什么是周日焦虑症
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e7%84%a6%e8%99%91" v-on:click="closeDrawer" id="为什么会焦虑-nav">
+										 为什么会焦虑
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
 
-<div class="container">
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+    </div>
+</div><div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/tags">
+                        Tags
+                    </a>
+            
+                
+                    
+                    
+                    <a class="a-block drawer-menu-item false" href="/categories">
+                        Categories
+                    </a>
+            
+            
+            <div class="toc">
 
-<div class="row">
-	<div class="col-sm-8 doc-main">
-		<main role="main">
-			<article>
-				<a id="title"></a>
-				<h1 class="doc-entry-title">周日焦虑症</h1>
-				<div class="doc-entry-meta">
-					<span><time datetime="2016-01-25">January 25, 2016</time></span>
-				</div>
-				<section>
-					<p>###什么是周日焦虑症</p>
 
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%91%a8%e6%97%a5%e7%84%a6%e8%99%91%e7%97%87" v-on:click="closeDrawer" id="什么是周日焦虑症-nav">
+										 什么是周日焦虑症
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+				
+				
+					
+						
+						
+							<ul>
+						
+							<ul>
+						
+							<ul>
+						
+						
+								<li>
+				 					<a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e7%84%a6%e8%99%91" v-on:click="closeDrawer" id="为什么会焦虑-nav">
+										 为什么会焦虑
+									</a>
+								</li>
+						
+							</ul>
+						
+							</ul>
+						
+							</ul>
+						
+					
+				
+			
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="http://blog.xyj.name">
+            小眼睛的自言自语
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://blog.xyj.name">
+        <div class="single-column-header-title">小眼睛的自言自语</div>
+        
+
+    </a>
+</div>
+            <div id="content">
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('/')">
+                <div class="post-title">
+                    周日焦虑症
+                    <div class="post-meta">
+                        <time itemprop="datePublished">
+                            2016-01-25 11:29
+                        </time>
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[general]</a>
+                                &nbsp;
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h3 id="什么是周日焦虑症">什么是周日焦虑症</h3>
 <p>不知道你们有没有这样的经历：每周日晚上八点，焦虑开始悄悄袭来，仿佛一切都迫在眉睫。明天有领导交待的任务，这个季度要达到的目标，有重要的会，答应朋友的事情……</p>
-
-<p><img src="http://ww1.sinaimg.cn/mw690/6f4077f3jw1f0e7g64cz6j20du0alt9a.jpg" alt="图片源于网络" title="图片源于网络" /></p>
-
+<p><img src="http://ww1.sinaimg.cn/mw690/6f4077f3jw1f0e7g64cz6j20du0alt9a.jpg" alt="图片源于网络" title="图片源于网络"></p>
 <p>周日焦虑，是指上班族最痛苦的时候并不是工作日，而是假日结束之时，工作开始之前。还没工作的朋友也许体会不到，不过相信每个人都经历过开学恐慌症吧。因为放假的时候没有好好做作业，快要开学了发现还有好几大本作业……感受类似，周日焦虑可要比开学恐慌来的次数更多。</p>
-
-<p>###为什么会焦虑</p>
-
-<p>#####1. 拖沓
-我
-#####2. 即将要做的事情。
-as
-#####3. 能力不足，可以预见后果不好
-as</p>
-
+<h3 id="为什么会焦虑">为什么会焦虑</h3>
+<h5 id="1-拖沓">1. 拖沓</h5>
+<h5 id="2-即将要做的事情">2. 即将要做的事情。</h5>
+<h5 id="3-能力不足可以预见后果不好">3. 能力不足，可以预见后果不好</h5>
 <p>『我们真正的痛苦，来自于因耽误而产生的持续的焦虑，来自于因最后时刻所完成项目质量之低劣而产生的负罪感，还来自于因为失去人生中许多机会而产生的深深的悔恨。』——《战胜拖拉》</p>
-
-<p>###我是怎么解决的
-+ 合理的目标</p>
-
+<p>###我是怎么解决的</p>
+<ul>
+<li>合理的目标</li>
+</ul>
 <p>所有事情都有个合理的目标SMART原则</p>
-
 <ul>
 <li>Todo List</li>
 </ul>
-
 <p>我在Evernote的有个todo list，列出来最近7天需要完成的事情。完成一个划掉一个。</p>
-
 <ul>
 <li>专心做一件事</li>
 </ul>
-
 <p>番茄工作法。重要的事情，特别是工作中的事情</p>
-
 <ul>
 <li>兴趣</li>
 </ul>
-
 <p>保留借口，只谈心声</p>
 
-				</section>
-			</article>
-		</main>
-	</div> 
+                    <HR width="100%" id="EOF">
+                    <p style="color:#777;">Last modified on 2016-01-25</p>
+                </div>
+                
+            </div>
+            
+            
+            <nav class="post-pagination">
 
-	
-<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
-	<div class="sidebar-module">
-		<div class="sidebar-toc">
-			<h4>Table of Contents</h4>
-			<ul>
-				<li><strong><a href="#title">周日焦虑症</a></strong></li>
-			</ul>
-			
-		</div>
-	</div>
-	<div class="sidebar-module">
-		<h4>Tags</h4>
-		<div class="tag-box">
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/sb">sb</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF">产品与技术</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%81%A5%E8%BA%AB">健身</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E5%87%8F%E8%84%82">减脂</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96">思维固化</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D">拒绝</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83">换位思考</a>
-		
-			<a class="tag-item" href="http://blog.xyj.name/tags/%E9%9A%BE%E5%BE%97%E7%B3%8A%E6%B6%82">难得糊涂</a>
-		
-		</div>
-	</div>
+                
+                <a class="newer-posts" href="http://blog.xyj.name/post/why-fitness/">
+                    Next<br>为什么健身
+                </a>
+                
+                
+                
+                <a class="older-posts" href="http://blog.xyj.name/post/leader-sb/">
+                    Previous<br>为什么你会觉得领导是SB？
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
 </div>
 
-</div> 
-
-
-<hr />
-
-<div class="row">
-	<div class="col-sm-8">
-		<p class="doc-footer-em"><a href="#">Back to TOP</a></p>
-	</div>
-</div>
-
-</div> 
-
-<footer class="doc-footer">
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
 	
-	<p>Copyright©2016 xyj.name 版权所有</p>
-	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
-</footer>
-
-
-
-<script src="http://blog.xyj.name/js/jquery-1.11.2.min.js"></script>
-<script src="http://blog.xyj.name/js/bootstrap.min.js"></script>
-
-<script src="http://blog.xyj.name/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="http://blog.xyj.name/js/ie10-viewport-bug-workaround.js"></script>
-<script src="http://blog.xyj.name/js/jquery.jqpagination-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){$(".pagination").jqPagination({link_string:"page/{page_number}/",page_string:"Page {current_page} of {max_page}",paged:function(a){location.href="page/"+a+"/"}})});
-</script>
-</body>
+	Copyright©2020 xyj.name 版权所有
+	</div>
+    	</div>
+    <script src="http://blog.xyj.name/js/journal.js"></script>
+    </body>
 </html>
