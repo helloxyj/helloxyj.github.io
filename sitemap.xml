@@ -3,13 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.xyj.name/categories/</loc>
-    <lastmod>2016-05-31T11:20:39+08:00</lastmod>
+    <loc>http://blog.xyj.name/categories/book/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.xyj.name/categories/general/</loc>
-    <lastmod>2016-05-31T11:20:39+08:00</lastmod>
+    <loc>http://blog.xyj.name/categories/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyj.name/post/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyj.name/tags/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyj.name/post/netflix/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyj.name/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.xyj.name/tags/%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2020-03-02T19:10:38+08:00</lastmod>
   </url>
   
   <url>
@@ -18,22 +43,12 @@
   </url>
   
   <url>
-    <loc>http://blog.xyj.name/post/</loc>
-    <lastmod>2016-05-31T11:20:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyj.name/tags/</loc>
+    <loc>http://blog.xyj.name/categories/tech/</loc>
     <lastmod>2016-05-31T11:20:39+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.xyj.name/tags/%E4%BA%A7%E5%93%81%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2016-05-31T11:20:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyj.name/</loc>
     <lastmod>2016-05-31T11:20:39+08:00</lastmod>
   </url>
   
@@ -48,17 +63,17 @@
   </url>
   
   <url>
+    <loc>http://blog.xyj.name/categories/general/</loc>
+    <lastmod>2016-01-25T11:29:15+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.xyj.name/post/jiaolv/</loc>
     <lastmod>2016-01-25T11:29:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.xyj.name/categories/feel/</loc>
-    <lastmod>2016-01-20T12:05:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyj.name/tags/sb/</loc>
     <lastmod>2016-01-20T12:05:32+08:00</lastmod>
   </url>
   
@@ -88,17 +103,12 @@
   </url>
   
   <url>
-    <loc>http://blog.xyj.name/categories/book/</loc>
-    <lastmod>2015-10-29T18:23:14+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.xyj.name/post/the-dead-end/</loc>
     <lastmod>2015-10-29T18:23:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.xyj.name/tags/%E6%8D%A2%E4%BD%8D%E6%80%9D%E8%80%83/</loc>
+    <loc>http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2015-10-21T06:52:12+08:00</lastmod>
   </url>
   
@@ -118,18 +128,8 @@
   </url>
   
   <url>
-    <loc>http://blog.xyj.name/tags/%E6%8B%92%E7%BB%9D/</loc>
-    <lastmod>2015-08-28T02:30:51+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.xyj.name/post/developers-with-pm/</loc>
     <lastmod>2015-08-19T23:14:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.xyj.name/tags/%E6%80%9D%E7%BB%B4%E5%9B%BA%E5%8C%96/</loc>
-    <lastmod>2015-08-06T12:59:35+08:00</lastmod>
   </url>
   
   <url>

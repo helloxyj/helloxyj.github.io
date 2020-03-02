@@ -7,17 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright©2020 xyj.name 版权所有</copyright>
-    <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 19:10:38 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.xyj.name/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>general</title>
-      <link>http://blog.xyj.name/categories/general/</link>
+      <title>book</title>
+      <link>http://blog.xyj.name/categories/book/</link>
+      <pubDate>Mon, 02 Mar 2020 19:10:38 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>http://blog.xyj.name/categories/tech/</link>
       <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
       
-      <guid>http://blog.xyj.name/categories/general/</guid>
+      <guid>http://blog.xyj.name/categories/tech/</guid>
       <description></description>
     </item>
     
@@ -31,20 +40,20 @@
     </item>
     
     <item>
+      <title>general</title>
+      <link>http://blog.xyj.name/categories/general/</link>
+      <pubDate>Mon, 25 Jan 2016 11:29:15 +0800</pubDate>
+      
+      <guid>http://blog.xyj.name/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>feel</title>
       <link>http://blog.xyj.name/categories/feel/</link>
       <pubDate>Wed, 20 Jan 2016 12:05:32 +0800</pubDate>
       
       <guid>http://blog.xyj.name/categories/feel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>book</title>
-      <link>http://blog.xyj.name/categories/book/</link>
-      <pubDate>Thu, 29 Oct 2015 18:23:14 +0800</pubDate>
-      
-      <guid>http://blog.xyj.name/categories/book/</guid>
       <description></description>
     </item>
     

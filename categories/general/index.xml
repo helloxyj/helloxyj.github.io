@@ -7,27 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright©2020 xyj.name 版权所有</copyright>
-    <lastBuildDate>Tue, 31 May 2016 11:20:39 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 Jan 2016 11:29:15 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.xyj.name/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Octave简单应用(一)</title>
-      <link>http://blog.xyj.name/post/octave/</link>
-      <pubDate>Tue, 31 May 2016 11:20:39 +0800</pubDate>
-      
-      <guid>http://blog.xyj.name/post/octave/</guid>
-      <description>Octave 是一个旨在提供与Matlab语法兼容的开放源代码科学计算及数值分析的工具；它提供了方便的互动命令列接口来解决线性与非线性的数值运算问题，并可将计算结果可视化，与高价的商业软体MATLAB语法几乎兼容
- 环境搭建 安装octave Mac OSX平台下，用神器Homebrew安装
-brew tap homebrew/science brew update &amp;amp;&amp;amp; brew upgrade brew install octave 安装完成看到如下提示：
-setenv(&#39;GNUTERM&#39;,&#39;qt&#39;) # Requires QT; install gnuplot --with-qt setenv(&#39;GNUTERM&#39;,&#39;x11&#39;) # Requires XQuartz; install gnuplot --with-x11 setenv(&#39;GNUTERM&#39;,&#39;wxt&#39;) # Requires wxmac; install gnuplot --with-wxmac setenv(&#39;GNUTERM&#39;,&#39;aqua&#39;) # Requires AquaTerm; install gnuplot --with-aquaterm 这里提示我们要设置默认的graphics toolkit。首先选择GUI的展示基于那种框架，我选择x11。安装gnuplot：
-brew install gnuplot --with-x11
-配置 在 .bash_profile种添加环境变量
-export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig 配置默认的graphics toolkit ，在配置文件 /usr/local/share/octave/site/m/startup/octaverc 中添加 setenv(&#39;GNUTERM&#39;,&#39;x11&#39;)
-启动 直接命令行执行octave ，或者保存成脚本，打开脚本编辑器新加脚本
-tell application &amp;quot;Terminal&amp;quot; do script &amp;quot;`which octave`; exit&amp;quot; end tell 保存成octave.</description>
-    </item>
     
     <item>
       <title>周日焦虑症</title>
